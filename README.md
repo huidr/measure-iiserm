@@ -1,3 +1,3 @@
 # IISER-M, MTH309: Measure and Probability
 
-Notes for measure theory taught at IISER-M.
+Notes of measure theory taught at IISER-M.
