@@ -1,0 +1,56 @@
+\documentclass{amsart}
+\input{macros}
+\input{preamble}
+
+\begin{document}
+\includepdf{cover}
+
+These are lecture notes for the course MTH402: Functional Analysis taught by Chandrakant Aribam during the monsoon session of 2022. I \TeX{}-ed them on Emacs. Please report bugs/errors, if any.
+
+\hfill Ronald Huidrom
+
+\tableofcontents
+
+\section{The Course Commences, 22/07/2022} 
+
+The lecture starts with a short review of elementary ideas of vector spaces. Morphisms are structure preserving maps. An endomorphism on a mathematical structure $S$ is a structure preserving map from $S$ to itself.
+
+\dfn{Linear endomorphism}{Let $V$ be a vector space. A linear endomorphism is a linear transformation $T: V \to V$. }
+
+Set of all linear endomorphisms on a vector space $V$ over a field $F$ is denoted by End$_F(V)$. An automorphism on $V$ is an endomorphism on $V$ which is also an isomorphism (one-one and onto).
+
+Recall that every field is also a vector space over itself. Thus, we may define a linear map from a vector space to a field. Indeed, we have a special name for this map.
+
+\dfn{Linear functional}{Let $V$ be a vector space. Let $F$ be a field. Then a linear functional is a linear transformation $T: V \to F$.}
+
+The following are examples of linear functionals.
+
+\begin{enumerate}
+\item A linear map $T: \bbR \to \bbR $ defined by $T(x) = \alpha x$ for some $\alpha \in \bbR$. 
+\item A linear map $T: \bbR^2 \to \bbR$ defined by $T(x_1, x_2) = \beta x_1$ for some $\beta \in \bbR$. 
+\item A linear map $\pi: \bbR^2 \to \bbR^2$ defined by $\pi(x_1, x_2) = x_1$. 
+\item Let $T_1:V_1 \to V_1$ be a linear map and $T_2: V_1 \to F$ be a linear functional. Then $T_2\circ T_1: V_1 \to F$ is a linear functional. 
+\end{enumerate}
+
+Consider the following ODE: 
+\begin{equation}
+\label{eq:1}
+a_n \frac{d^ny}{dx^n} + a_{n-1} \frac{d^{n-1}y}{dx^{n-1}} + \cdots + a_1 \frac{dy}{dx} + a_0 = 0.
+\end{equation}
+
+Let $a_0=0$. If $y_1(x)$ and $y_2(x)$ are two solutions, then $(y_1+y_2)(x)$ is also a solution. Also $\alpha y_1(x)$ is also a solution for some $\alpha \in \bbR$. Let $S$ be the set of all solutions when $a_0 = 0$. Clearly $S$ is a vector space over $\bbR$.
+
+We now define the operator 
+\begin{displaymath}
+L \coloneqq a_n \frac{d^n}{dx^n} + a_{n-1} \frac{d^{n-1}}{dx^{n-1}} + \cdots + a_1 \frac{d}{dx}
+\end{displaymath}
+
+which operates on the vector space $C^n(\bbR)\coloneqq \{f:\bbR \to \bbR | f \text{ is differentiable on } \bbR \text{ upto } n \text{ times}\}$ over $\bbR$. Let $X$ be the set of all functions on $\bbR$. Then $X$ is a vector space (also called function space) and $L:C^n(\bbR) \to X$ is a linear map. Clearly $S = \ker(L)$.
+
+\exer{}{What is the dimension of the vector space $L$ defined above?}
+
+\section{The Second Day, 23/07/2022}
+
+
+
+\end{document}
