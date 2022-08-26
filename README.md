@@ -4,4 +4,4 @@ These are notes of `IISERM MTH402` titled `Functional Analysis` taught during th
 
 Download the PDF file from the link below:
 
-[Functional Analysis (IISERM, Fall 2022)](https://huidr.github.io/functional-analysis/FunctionalAnalysis.pdf). Last updated 26th Aug., 2022.
+[Functional Analysis (IISERM, Fall 2022)](https://github.com/huidr/functional-analysis/FunctionalAnalysis.pdf). Last updated 26th Aug., 2022.
