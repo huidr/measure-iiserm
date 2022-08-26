@@ -95,7 +95,7 @@ We look at some examples of Banach spaces:
 \begin{displaymath}
 \Vert (x_1, \ldots, x_n) \Vert = |x_1| + \cdots + |x_n| \hspace*{1cm}\text{ or }\hspace*{1cm} \Vert (x_1, \ldots, x_n) \Vert = \left( \sum_{i=1}^n |x_i|^2 \right)^{1/2}.
 \end{displaymath} 
-\item\label{item:15} $L^p$-spaces are Banach spaces with the $p$-norm 
+\item\label{item:15} $l_p^n$-spaces are Banach spaces with the $p$-norm 
 \begin{displaymath}
 \Vert (x_1, \ldots, x_n) \Vert = \left( \sum_{i=1}^n |x_i|^p \right)^{1/p}.
 \end{displaymath}
@@ -106,5 +106,53 @@ We look at some examples of Banach spaces:
 The scheduled class on 25/08/2022 was dismissed.
 
 \section{The Misery of Banach Spaces, 26/08/2022}
+
+Normed linear spaces can be infinite dimensional over $\bbR$ or $\bbC$. Recall that Banach spaces are complete normed linear spaces. The linear space $(\bbQ, |\cdot|)$ with the usual metric is not complete.
+
+\exer{}{Can you think of a vector spaces over $\bbR$ which is not complete with respect to some norm?}
+
+Consider $l_p^n$ with $1\leq p < \infty$. Is this complete? Suppose $x_m$, $x_{m^{\prime}}\in l_p^n$. Let $\epsilon > 0$ be any fixed real number. Suppose for sufficiently large $m, m^{\prime}$ sufficiently large,
+\begin{align*}
+  \Vert x_m - x_{m^{\prime}} \Vert &< \epsilon \\
+  \sum_{}^{} |x_{m_i}-x_{m^{\prime}_i}|^p &< \epsilon^p \\
+  |x_{m_i}-x_{m^{\prime}_i} |^p \leq \sum_{}^{} |x_{m_i}-x_{m^{\prime}_i}|^p &< \epsilon^p \\
+  |x_{m_i}-x_{m^{\prime}_i} | &< \epsilon.
+\end{align*}
+That is, $\{x_{m,i}\}_m$ is Cauchy in $\bbR$. $\{x_{m,1}\}_m$ converges in $\bbR$, say $\displaystyle \lim_{m\to\infty} x_{m,i} = a_i$.
+
+We put $a=(a_1, \cdots, a_n)$. Now, $|x_{m,i}-a_i| < \epsilon/n^{1/p}$ for $m \geq N_i$. For $N_0 = \max\{N_1, \cdots, N_n\}$, we have,
+\begin{align*}
+|x_m-a_i| < \epsilon/n^{1/p} \hspace*{1cm}\text{ for all $m>N_0$ and for all $i$}.
+\end{align*}
+Then 
+\begin{align*}
+  \sum_{i=1}^m |x_m-a_i|^p &< \epsilon^p \\
+  \Vert x_m-a \Vert = \sum_{i=1}^n |x_{m,i}-a_i | &< \epsilon,
+\end{align*}
+for all $m > N_0$. Therefore, $\displaystyle \lim_{m\to\infty} x_m = a$ so that $l_p^n$ is a Banach space.
+
+We represent $l_p^{\infty}$ as $l_p$. It is an infinite dimensional linear space such that
+\begin{displaymath}
+\sum_{i=1}^{\infty} |x_i|^p < \infty.
+\end{displaymath}
+Taking square root yields its norm, which is 
+\begin{equation}
+\label{eq:2}
+\Vert x \Vert _p = \left( \sum_{n=1}^{\infty} |x_n|^p \right)^{1/p}.
+\end{equation}
+
+\exer{Triangle inequality}{Show that the norm defined above satisfies triangle inequality.}
+
+We now introduce $L_p$ space as a space of functions $f: \bbR \to \bbR$ equipped with the norm 
+\begin{equation}
+\label{eq:3}
+\Vert f \Vert_p = \left( \int |f(x)|^p dm(x) \right)^{1/p},
+\end{equation}
+where $m$ is a measure on $\bbR$. We may also write 
+\begin{displaymath}
+L_p = \{ f: \bbR \to \bbR \mid \int_{} |f(x)|^p dm(x) < \infty \}.
+\end{displaymath}
+
+\section{29/08/2022}
 
 \end{document}
