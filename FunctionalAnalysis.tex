@@ -155,4 +155,47 @@ L_p = \{ f: \bbR \to \bbR \mid \int_{} |f(x)|^p dm(x) < \infty \}.
 
 \section{29/08/2022}
 
+Continuous functions on compact sets are always bounded. In fact, continuous functions maps compact sets to compact sets.
+
+\thm{}{Let $N$ be a normed linear space and $M \subset N$ which is a closed linear subspace. Then 
+\begin{enumerate}
+\item\label{item:5} Consider the quotient $N/M = \{ x + M \mid x \in N \text{ and } x_1+M = x_2 + M \text{ iff } x_1-x_2 \in M \}$. Define
+\begin{displaymath}
+\Vert x + M \Vert = \inf \{\Vert x + m \Vert \mid m \in M \},
+\end{displaymath}
+then $N/M$ is a linear subspace over $\bbR$. 
+\item\label{item:6} If $N$ is Banach, then $N/M$ is Banach.
+\end{enumerate}}
+
+\begin{proof}
+\label{sec:29082022}
+\begin{enumerate}
+\item\label{item:16} $\Vert x + M \Vert = \inf \{ \Vert x + m \Vert \mid m\in M \} \implies \Vert x + M \Vert \geq 0$. Suppose $\Vert x + M \Vert = 0$. Then $\exists$ a sequence $\{ t_k \} \subset M$ such that $\Vert x + t_k \Vert \to 0$. That is, $0 < 1/k \implies \exists \Vert x + t_k \Vert < 1/k$. As $M$ is closed, there exists a subsequence $\{t_k\} \subset M$ such that $\{t_k\}$ is convergent and let $\displaystyle t = \lim_{r\to\infty} t_{k_r}$. Then $t\in M$ as $M$ is closed. Since $t_{n_r} \to t$, we have $x+t_{n_r} \to x + t$. Then $\Vert x + t_{n_r} \Vert \to \Vert x + t \Vert$ so that $\Vert x+t \Vert = 0$, from which we get $t = -x$. Therefore, $x+M = 0$.
+
+  Now, we want to prove triangle inequality. See that, for $m=u+v \in M$, we have 
+\begin{align*}
+  \Vert x + y + m \Vert \leq \Vert x + u \Vert + \Vert y + v \Vert \\
+  \inf \Vert x + y + m \Vert \leq \Vert x + y + m \Vert \leq \Vert x + u \Vert + \Vert y + v \Vert
+\end{align*}
+Then 
+\begin{align*}
+  \inf_{u\in M} \Vert x + u \Vert \leq \Vert x + u \Vert \\
+  \left(\inf_{u\in M} \Vert x + u \Vert \right) + \Vert y + v \Vert \leq \Vert x + u \Vert + \Vert y + v \Vert \\
+  \inf_{m\inM} \Vert x + y + m \Vert \leq \inf_{u\in M } \Vert x + u \Vert + \Vert y + b \Vert.
+\end{align*}
+Take $\inf$ on $v\in M$. Then we are done. 
+\item\label{item:18} Let $\{ x_n + M\}_n$ be a Cauchy sequence in $N/M$. That is, $\Vert x_n + M - x_m + M\Vert \to 0$ as $n, m \to \infty$. We see that 
+\begin{align*}
+  \Vert x_{n_1} + M - x_{n_2} + M \Vert \frac{1}{2} \implies \Vert y_1-y_2 \Vert < \frac{1}{2} \\
+  \Vert x_{n_2} + M - x_{n_3} + M \Vert \frac{1}{2^2} \implies \Vert y_2-y_3 \Vert < \frac{1}{2^2} \\
+  \cdots\\
+  \Vert x_{n_k} + M - x_{n_{k+1}} + M \Vert < \frac{1}{2^k},
+\end{align*}
+and so on.
+\end{enumerate}
+\end{proof}
+
+
+\nt{In the above, defining $\Vert x + M \Vert = \Vert x \Vert$ does not work. Defining $\Vert x + M \Vert = \sup \{ \Vert x + m \Vert \mid m \in M \}$ will not work either.} 
+
 \end{document}
