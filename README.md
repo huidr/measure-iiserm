@@ -1,6 +1,6 @@
 ## [Term Papers](https://github.com/huidr/term-papers) by Ronald Huidrom
 
-This is an archive of term papers and presentations I had to work on during my undergraduate years at `IISERM`. The section headings are clickable, linking to the `PDF` files.
+This is an archive of term papers, seminars, projects and presentations I had to work on during my undergraduate years at `IISERM`. The section headings are clickable, linking to the `PDF` files.
 
 ### [Integration on Manifolds and Stokes' Theorem](), Fall 2022
 
