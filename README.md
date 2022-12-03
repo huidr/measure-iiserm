@@ -2,6 +2,10 @@
 
 This is an [archive](archive.csv) of term papers, seminars, projects and presentations I worked on during my undergraduate years at `IISERM`. The section headings are clickable.
 
+### [Cartesian Closed Categories](cartesian-closed-categories.pdf), Fall 2022
+
+**Abstract**. Function spaces in the category **Set** can be generalized to exponential objects in more general categories. This gives rise to Cartesian closed categories in which any morphism defined on a product of two objects can be naturally identified with a morphism defined on one of the factors. These categories are particularly important in mathematical logic and the theory of programming, in that their internal language is the simply typed $\lambda$-calculus.
+
 ### [Turing Machines](https://github.com/huidr/turing-machines), Fall 2022
 
 **Abstract**. A Turing machine is an abstract computational model with a finite control and an unbounded memory. Despite its simplicity, a Turing machine is capable of implementing any algorithm. This gives rise to the idea of [recognizability](https://en.wikipedia.org/wiki/Recursively_enumerable_language) and [decidability](https://en.wikipedia.org/wiki/Recursive_language) of languages. We also look at the famous [Church-Turing conjecture](https://en.wikipedia.org/wiki/Church%E2%80%93Turing_thesis) and [Rice's theorem](https://en.wikipedia.org/wiki/Rice%27s_theorem) for undecidability.
