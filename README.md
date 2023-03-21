@@ -2,6 +2,10 @@
 
 This is an [archive](archive.csv) of term papers, seminars, projects and presentations I worked on during my undergraduate years at `IISERM`. The section headings are clickable.
 
+### [Game of Nim](game-of-nim.pdf), Spring 2023
+
+**Abstract**. 
+
 ### [Cartesian Closed Categories](cartesian-closed-categories.pdf), Fall 2022
 
 **Abstract**. Function spaces in the category **Set** can be generalized to exponential objects in more general categories. This gives rise to Cartesian closed categories in which any morphism defined on a product of two objects can be naturally identified with a morphism defined on one of the factors. These categories are particularly important in mathematical logic and the theory of programming, in that their internal language is the simply typed $\lambda$-calculus.
