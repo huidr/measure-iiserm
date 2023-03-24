@@ -4,7 +4,7 @@ This is an [archive](archive.csv) of term papers, seminars, projects and present
 
 ### [Game of Nim](game-of-nim.pdf), Spring 2023
 
-**Abstract**. 
+**Abstract**. Nim is one of the most important games in combinatorial game theory. 
 
 ### [Cartesian Closed Categories](cartesian-closed-categories.pdf), Fall 2022
 
