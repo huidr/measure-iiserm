@@ -4,7 +4,7 @@ This is an [archive](archive.csv) of term papers, seminars, projects and present
 
 ### [Game of Nim](game-of-nim.pdf), Spring 2023
 
-**Abstract**. Nim is one of the most important games in combinatorial game theory. 
+**Abstract**. Nim is one of the most important games in combinatorial game theory. The ideas and concepts from Nim can be extended to many other combinatorial games. Here, we introduce Nim as a two-player game played on any finite number of heaps and solve it.
 
 ### [Cartesian Closed Categories](cartesian-closed-categories.pdf), Fall 2022
 
